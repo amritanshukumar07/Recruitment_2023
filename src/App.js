@@ -505,7 +505,16 @@ theme="colored"
                         theme: "colored",
                         });
                     } else {
-                      toast.error(`Failed: ERR CODE ${response.data}`, {
+                      const errCodes = {
+                        "3":"Already Registered!",
+                        "11":"Invalid whatsapp",
+                        "16":"Invalid Email",
+                        "15":"Invalid Scholar ID",
+                        "14":"Tampered responses!",
+                        "12":"Character limit is 50",
+                        "13":"Missing required fileds"
+                      } 
+                      toast.error(`Failed: ERR CODE ${errCodes[response.data.toString()]}`, {
                         position: "bottom-right",
                         autoClose: 5000,
                         hideProgressBar: false,
