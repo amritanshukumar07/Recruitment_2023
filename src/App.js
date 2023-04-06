@@ -861,12 +861,7 @@ theme="colored"
           <p className="foot-head">Contact Us</p>     
           <div className="footer">
             <div className="foot-left">
-              <div className="foot-no">
-                <p>Shrish Shrivastava</p>
-                <p>
-                  <a href="tel: +91 93403 99137">+91 93403 99137</a>
-                </p>
-              </div>
+             
               <div className="foot-no">
                 <p>Krishna Kumar Lalwani</p>
                 <p>
@@ -879,7 +874,12 @@ theme="colored"
                   <a href="tel: +91 98972 25339">+91 98972 25339</a>
                 </p>
               </div>
-              
+              <div className="foot-no">
+                <p>Shrish Shrivastava</p>
+                <p>
+                  <a href="tel: +91 93403 99137">+91 93403 99137</a>
+                </p>
+              </div>
               <div className="foot-no">
                 <p>Aarushi Gulati</p>
                 <p>
