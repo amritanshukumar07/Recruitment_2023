@@ -1,3 +1,6 @@
+
+  import $ from "jquery";
+
 export default function Navbar(){
     window.onscroll = function () { scrollFunction() };
 
@@ -82,7 +85,7 @@ export default function Navbar(){
         }
 
     }
-   const closeNav=() =>{
+   const closeNav=(event) =>{
         const burger = document.querySelector('.burger');
         const nav = document.querySelector('.nav-items');
         if(window.innerWidth<1110){
@@ -90,6 +93,25 @@ export default function Navbar(){
           burger.classList.remove('toggle');
           window.onscroll= function () {};
         }
+        console.log(event)
+         // Make sure this.hash has a value before overriding default behavior
+      
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          
+          // Store hash
+          var hash = "#"+event.target.href.split("#")[1];
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+     
       }
     
     
@@ -112,7 +134,7 @@ export default function Navbar(){
             <a href="#section-2" onClick={closeNav}>About Us</a>
           </li>
           <li className="nav-link">
-            <a href="#section-5"onClick={closeNav}>Timeline</a>
+            <a href="#section-5" onClick={closeNav}>Timeline</a>
           </li>
           <li className="nav-link">
             <a href="#section-4" onClick={closeNav}>Verticals</a>
