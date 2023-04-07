@@ -416,7 +416,7 @@ function App() {
                 <p className="box-title">Designers</p>
                 <p className="box-text-2">
                   Designers at team E-Cell are responsible for designing all the
-                  posters that are uploaded on the website or social medianp
+                  posters that are uploaded on the website or social media
                   handles of the team. They also design various brochures and
                   booths during E-Summit and all the websites associated with
                   E-Cell.
