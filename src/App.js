@@ -83,7 +83,7 @@ function App() {
       "J",
     ]
   };
-  var [status, setStatus] = React.useState({text: "Onhold Try after 12:00PM", outlook: "outlined"});
+  var [status, setStatus] = React.useState({text: "APPLY", outlook: "outlined"});
   var [PrimaryVerticals, setPrimaryVerticals] = React.useState(Verticals);
   var [SecondaryVerticals, setSecondaryVerticals] = React.useState(Verticals);
   const [Course, setCourse] = React.useState("");
@@ -810,7 +810,7 @@ theme="colored"
                       console.log(e);
                     }}
                     fullWidth
-                    disabled
+                  
                   >
                    {status.text}
                   </LoadingButton>
