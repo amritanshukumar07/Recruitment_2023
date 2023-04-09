@@ -512,9 +512,10 @@ theme="colored"
                         "15":"Invalid Scholar ID",
                         "14":"Tampered responses!",
                         "12":"Character limit is 50",
-                        "13":"Missing required fileds"
+                        "13":"Missing required fileds",
+                        "0":"TRY AGAIN & CONTACT SHRISH SHRIVASTAVA (9340399137)"
                       } 
-                      toast.error(`Failed: ERR CODE ${errCodes[response.data.toString()]}`, {
+                      toast.error(`ERROR: ${errCodes[response.data.toString()]}`, {
                         position: "bottom-right",
                         autoClose: 5000,
                         hideProgressBar: false,
