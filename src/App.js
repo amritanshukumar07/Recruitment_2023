@@ -468,7 +468,7 @@ function App() {
             </div>
           </section>
           {/* Registration form */}
-          <section id="section-form">
+          {/* <section id="section-form">
             <Grid
               sx={{
                 justifyContent: { xs: "center", lg: "left" },
@@ -871,7 +871,7 @@ function App() {
                 </form>
               </Grid>
             </Grid>
-          </section>
+          </section> */}
           <section id="section-6">
             <p className="heading faq-head" style={{ color: "#FFFFFF" }}>
               Rules And <span style={{ color: "#EDA177" }}>Regulations</span>
